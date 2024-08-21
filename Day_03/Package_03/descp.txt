@@ -1,0 +1,17 @@
+This package uses sub package and multiple __init__.py This helps in easy import of functions like:-
+
+1)
+
+rohit@keshri:~/Desktop/Day_03/Package_03$ python3
+Python 3.6.9 (default, Jul 17 2020, 12:50:27) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import mypackage
+>>> import mypackage as mp
+>>> mp.sq_ar(4)
+16
+>>> mp.cir_ar(7)
+154.0
+>>> mp.rec_ar(4,9)
+36
+

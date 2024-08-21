@@ -1,0 +1,82 @@
+First run the "python setup.py sdist bdist_wheel" and then run in Python3 shell. Here no "init.py is used"
+
+
+
+rohit@keshri:~/Desktop/Day_03/Package_01$ python setup.py sdist bdist_wheel
+running sdist
+running egg_info
+creating mypackage.egg-info
+writing mypackage.egg-info/PKG-INFO
+writing top-level names to mypackage.egg-info/top_level.txt
+writing dependency_links to mypackage.egg-info/dependency_links.txt
+writing manifest file 'mypackage.egg-info/SOURCES.txt'
+package init file 'mypackage/__init__.py' not found (or not a regular file)
+reading manifest file 'mypackage.egg-info/SOURCES.txt'
+writing manifest file 'mypackage.egg-info/SOURCES.txt'
+warning: sdist: standard file not found: should have one of README, README.rst, README.txt, README.md
+
+running check
+warning: check: missing required meta-data: url
+
+warning: check: missing meta-data: if 'author' supplied, 'author_email' must be supplied too
+
+creating mypackage-0.1
+creating mypackage-0.1/mypackage
+creating mypackage-0.1/mypackage.egg-info
+copying files to mypackage-0.1...
+copying setup.py -> mypackage-0.1
+copying mypackage/func1.py -> mypackage-0.1/mypackage
+copying mypackage/func2.py -> mypackage-0.1/mypackage
+copying mypackage.egg-info/PKG-INFO -> mypackage-0.1/mypackage.egg-info
+copying mypackage.egg-info/SOURCES.txt -> mypackage-0.1/mypackage.egg-info
+copying mypackage.egg-info/dependency_links.txt -> mypackage-0.1/mypackage.egg-info
+copying mypackage.egg-info/top_level.txt -> mypackage-0.1/mypackage.egg-info
+Writing mypackage-0.1/setup.cfg
+creating dist
+Creating tar archive
+removing 'mypackage-0.1' (and everything under it)
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib.linux-x86_64-2.7
+creating build/lib.linux-x86_64-2.7/mypackage
+copying mypackage/func2.py -> build/lib.linux-x86_64-2.7/mypackage
+copying mypackage/func1.py -> build/lib.linux-x86_64-2.7/mypackage
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/mypackage
+copying build/lib.linux-x86_64-2.7/mypackage/func2.py -> build/bdist.linux-x86_64/wheel/mypackage
+copying build/lib.linux-x86_64-2.7/mypackage/func1.py -> build/bdist.linux-x86_64/wheel/mypackage
+running install_egg_info
+Copying mypackage.egg-info to build/bdist.linux-x86_64/wheel/mypackage-0.1.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/mypackage-0.1.dist-info/WHEEL
+creating 'dist/mypackage-0.1-py2-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'mypackage/func1.py'
+adding 'mypackage/func2.py'
+adding 'mypackage-0.1.dist-info/METADATA'
+adding 'mypackage-0.1.dist-info/WHEEL'
+adding 'mypackage-0.1.dist-info/top_level.txt'
+adding 'mypackage-0.1.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+rohit@keshri:~/Desktop/Day_03/Package_01$ python3
+Python 3.6.9 (default, Jul 17 2020, 12:50:27) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import mypackage.func1 as f1
+>>> import mypackage.func2 as f2
+>>> f1.funcA()
+This is func A
+>>> f1.funcB()
+This is func B
+>>> f2.funcC()
+This is func C
+>>> f2.funcD()
+This is func D
+>>> 
+[1]+  Stopped                 python3
+

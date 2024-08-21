@@ -1,0 +1,41 @@
+This package uses the __init__.py This helps in easy import of functions like:-
+
+1)
+
+rohit@keshri:~/Desktop/Day_03/Package_02$ python3
+Python 3.6.9 (default, Jul 17 2020, 12:50:27) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from mypackage import sq_ar, cir_ar
+>>> sq_ar(9)
+81
+>>> cir_ar(17)
+908.2857142857143
+>>> 
+
+2)
+
+rohit@keshri:~/Desktop/Day_03/Package_02$ python3
+Python 3.6.9 (default, Jul 17 2020, 12:50:27) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import mypackage
+>>> mypackage.sq_ar(5)
+25
+>>> mypackage.cir_ar(14)
+616.0
+
+3)
+
+rohit@keshri:~/Desktop/Day_03/Package_02$ python3
+Python 3.6.9 (default, Jul 17 2020, 12:50:27) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import mypackage as mp
+>>> mp.sq_ar(10)
+100
+>>> mp.cir_ar(7)
+154.0
+>>> mp.cir_ar(3.5)
+38.5
+
